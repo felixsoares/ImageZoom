@@ -1,3 +1,5 @@
+[![Release]( https://img.shields.io/badge/Release-v1.2-blue.svg?style=flat )]( https://jitpack.io/#felixsoares/ImageZoom/ )
+
 # Image Zoom Popup
 
 ImageView with popup <br/>
