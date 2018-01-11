@@ -1,1 +1,1 @@
-# ImageZoom
+# Image Zoom Popup
