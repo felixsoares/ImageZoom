@@ -1,6 +1,6 @@
 # Image Zoom Popup
 
-ImageView with popup
+ImageView with popup <br/>
 When user click on ImageZoom will display popup with large image
 
 ![](https://image.ibb.co/jhVQgm/img1.jpg) ![](https://image.ibb.co/e5V2SR/img2.jpg) ![](https://image.ibb.co/n5f2SR/img3.jpg)
