@@ -18,7 +18,6 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.io.File;
@@ -26,19 +25,21 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import br.com.felix.imagezoom.ImageZoom;
+
 public class MainActivity extends AppCompatActivity {
 
     private final int REQUEST_GALERY = 1010, REQUEST_CAMERA = 1020;
     private String pictureImagePath = "";
 
-    private ImageView img1;
+    private ImageZoom img1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        img1 = findViewById(R.id.img1);
+        ImageZoom imageZoom = findViewById(R.id.img1);
 
         Button btnSelect = findViewById(R.id.btnSelect);
         btnSelect.setOnClickListener(new View.OnClickListener() {
@@ -164,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void onCaptureImageResult(Intent data) {
-        File imgFile = new  File(pictureImagePath);
+        File imgFile = new File(pictureImagePath);
         Bitmap myBitmap = BitmapFactory.decodeFile(imgFile.getAbsolutePath());
         salvarImagemLocal(myBitmap);
     }

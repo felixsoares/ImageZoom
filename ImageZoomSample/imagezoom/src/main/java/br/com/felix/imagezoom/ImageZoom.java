@@ -13,8 +13,6 @@ import android.view.View;
 
 public class ImageZoom extends AppCompatImageView implements View.OnClickListener {
 
-    private AttributeSet attrs;
-
     public ImageZoom(Context context) {
         super(context);
         setOnClickListener(this);
@@ -22,20 +20,16 @@ public class ImageZoom extends AppCompatImageView implements View.OnClickListene
 
     public ImageZoom(Context context, AttributeSet attrs) {
         super(context, attrs);
-        this.attrs = attrs;
         setOnClickListener(this);
     }
 
     public ImageZoom(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        this.attrs = attrs;
         setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
-        TypedArray a=getContext().obtainStyledAttributes(attrs, R.styleable.MyCustomView);
-
         CustomDialog.show(getContext(), ((BitmapDrawable)getDrawable()).getBitmap());
     }
 }
