@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <cache-path name="cache" path="." />
+    <files-path name="file" path="." />
+    <cache-path name="cache1" path="." />
+    <files-path name="file1" path="." />
+    <external-path name="files" path="." />
+    <cache-path name="cache" path="." />
+    <files-path name="file2" path="." />
+    <external-path name="files2" path="." />
+    <files-path name="gcm" path="shared_prefs/"/>
+    <cache-path name="gcm" path="shared_prefs/"/>
+    <external-path name="gcm" path="shared_prefs/" />
+    <external-path name="external_files" path="."/>
+    <external-path name="internal_files" path="."/>
+    <internal-path name="internal_files" path="."/>
+</paths>

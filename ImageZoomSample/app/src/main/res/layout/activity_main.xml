@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.com.felix.imagezoomsample.MainActivity">
+
+    <Button
+        android:id="@+id/btnSelect"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Gallery / Photos / Camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <br.com.felix.imagezoom.ImageZoom
+                android:id="@+id/img1"
+                android:adjustViewBounds="true"
+                android:src="@drawable/the_rock"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <br.com.felix.imagezoom.ImageZoom
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/undertaker"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <br.com.felix.imagezoom.ImageZoom
+                android:adjustViewBounds="true"
+                android:src="@drawable/john_cena"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <br.com.felix.imagezoom.ImageZoom
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/rey_mysterio"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <br.com.felix.imagezoom.ImageZoom
+                android:adjustViewBounds="true"
+                android:src="@drawable/hulk_hogan"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
