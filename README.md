@@ -1,4 +1,4 @@
-[![Release]( https://img.shields.io/badge/Release-v1.2-blue.svg?style=flat )]( https://jitpack.io/#felixsoares/ImageZoom/ )
+[![Release]( https://img.shields.io/badge/Release-v1.0-blue.svg?style=flat )]( https://jitpack.io/#felixsoares/ImageZoom/ )
 
 # Image Zoom Popup
 
