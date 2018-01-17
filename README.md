@@ -1,3 +1,4 @@
+[![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-ImageZoom-green.svg?style=flat )]( https://android-arsenal.com/details/1/6676 )
 [![Release]( https://img.shields.io/badge/Release-v1.0-blue.svg?style=flat )]( https://jitpack.io/#felixsoares/ImageZoom/ )
 
 # Image Zoom Popup
