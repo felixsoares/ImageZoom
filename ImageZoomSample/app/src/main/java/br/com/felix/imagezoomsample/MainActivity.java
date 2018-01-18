@@ -148,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
             if (requestCode == REQUEST_GALERY) {
                 onSelectFromGalleryResult(data);
             } else if (requestCode == REQUEST_CAMERA) {
-                onCaptureImageResult(data);
+                onCaptureImageResult();
             }
         }
     }
@@ -164,7 +164,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void onCaptureImageResult(Intent data) {
+    private void onCaptureImageResult() {
         File imgFile = new File(pictureImagePath);
         Bitmap myBitmap = BitmapFactory.decodeFile(imgFile.getAbsolutePath());
         salvarImagemLocal(myBitmap);
