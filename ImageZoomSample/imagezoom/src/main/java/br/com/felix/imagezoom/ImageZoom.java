@@ -30,6 +30,7 @@ public class ImageZoom extends AppCompatImageView implements View.OnClickListene
 
     @Override
     public void onClick(View view) {
-        CustomDialog.show(getContext(), ((BitmapDrawable)getDrawable()).getBitmap());
+        if (getDrawable() != null)
+            CustomDialog.show(getContext(), ((BitmapDrawable) getDrawable()).getBitmap());
     }
 }
